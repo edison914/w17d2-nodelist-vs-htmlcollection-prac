@@ -1,11 +1,13 @@
 export default () => {
   const bodyChildElements = document.body.children; // HTMLCollection [div]
-  // console.log(bodyChildElements);
+  //console.log(bodyChildElements);
 
   const div = bodyChildElements[0];
+  //console.log(div);
 
   const divChildElements = div.children; // HTMLCollection [span]
+  //console.log(divChildElements);
   const helloWorld = div.innerText; // Hello World! Yes!    <-- NOT Hello World!
   const span = divChildElements[0]; // <span>Yes!</span>
-  // debugger
+  //debugger
 };
